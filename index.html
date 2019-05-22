@@ -1,0 +1,18 @@
+<html>
+<script src="https://aframe.io/releases/0.7.1/aframe.min.js"></script>
+<script src="https://google-ar.github.io/three.ar.js/dist/three.ar.js"></script>
+<script src="https://rawgit.com/chenzlabs/aframe-ar/827e9db/dist/aframe-ar.min.js"></script>
+<script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/cfe5f316/dist/aframe-extras.js"></script>2
+
+<body>
+    <a-assets>
+        <a-asset id="fan" src="fan.gltf"></a-asset>
+        <a-asset id="oven" src="oven.gltf"></a-asset>
+        <a-asset id="fridge" src="fridge.gltf"></a-asset>
+    </a-assets>
+    <a-entity id="app1" gltf-model="#fan" position="-5 0 0" scale="0.5 0.5 0.5" animation-mixer></a-entity>
+    <a-entity id="app1" gltf-model="#fridge" position="0 5 0" scale="0.5 0.5 0.5" animation-mixer></a-entity>
+    <a-entity id="app2" gltf-model="#oven" position="5 0 0" scale="0.5 0.5 0.5" animation mixer></a-entity>
+</body>
+
+</html>
